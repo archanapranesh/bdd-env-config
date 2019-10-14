@@ -14,7 +14,7 @@ echo service name already exists test
 else
   if git ls-remote https://github.com/archanapranesh/$1.git -q
   then
-  echo $1=$2:$3:$4:$env >> $env.properties
+  echo -e "\n$1=$2:$3:$4:$env" >> $env.properties
   git add .
   git commit -m "teset232332"
   git push
